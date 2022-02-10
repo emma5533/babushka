@@ -1,0 +1,33 @@
+#modal {
+  display: none; /*den skal ikke vises hele tiden*/
+  height: 100vh;
+  width: 100vw;
+  position: fixed; /*den sidder et fast sted*/
+  background-color: rgba(145, 96, 7, 0.568);
+  top: 0;
+  left: 0;
+}
+
+#modal article {
+  /*eksempel.. fiks dette senere*/
+  max-width: 1000px;
+  margin: 2em;
+  background-color: rgb(255, 153, 0);
+  color: antiquewhite;
+}
+
+@media (min-width: 600px) {
+  #modal article {
+    margin: 4em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  #modal article img {
+    max-width: 90%;
+    grid-column: 1/2;
+  }
+  #modal article div {
+    grid-column: 2/3;
+  }
+}

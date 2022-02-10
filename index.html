@@ -5,13 +5,36 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="modal.css" />
     <title>Document</title>
   </head>
   <body>
-    <header></header>
+    <header>
+      <div class="top"></div>
+      <nav>
+        <button data-kategori="alle" class="valgt">Alle</button>
+        <button data-kategori="drikkevarer">Drikkevarer</button>
+        <button data-kategori="forretter">Forretter</button>
+        <button data-kategori="hovedretter">Hovedretter</button>
+        <button data-kategori="desserter">Desserter</button>
+        <button data-kategori="sideorders">Sideorders</button>
+      </nav>
+      <h2>Alle</h2>
+    </header>
+
+    <aside id="modal">
+      <article>
+        <img src="" alt="" />
+        <div>
+          <h3></h3>
+          <p id="beskrivelse"></p>
+          <p id="land"></p>
+        </div>
+      </article>
+    </aside>
 
     <main>
-      <h2>MENU</h2>
+      <h1>MENU</h1>
 
       <section>
         <template>
@@ -25,7 +48,9 @@
       </section>
     </main>
 
-    <footer></footer>
+    <footer>
+      BISTRO BABUSHKA - KORSGADE 18, 2200 KBH N - TLF. 87 65 43 21
+    </footer>
 
     <script src="menu.js"></script>
   </body>
