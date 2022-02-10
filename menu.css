@@ -7,7 +7,7 @@ body {
 }
 
 .top {
-  background-image: url(/top.svg);
+  background-image: url("http://emmaiguldbergsgade.dk/kea/06_bilag/top.svg");
   background-size: cover;
   background-position: 48% 50%;
   max-width: 100%;
